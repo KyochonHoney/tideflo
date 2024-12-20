@@ -1,0 +1,26 @@
+DBeaver
+
+Packet for query is too large (3,158,578 > 65,535). You can change this value on the server by setting the 'max_allowed_packet' variable.
+Link - https://velog.io/@growleb/DBeaver-Packet-for-query-is-too-large-ERROR
+
+접속할 때는 SSH로 21, 22번 포트로 우선 접근 후 DB MAIN에서 DB Server로 접근한다.
+
+Controller에서 주는 한글을 깨지지 않음
+view를 로드할 때 한글이 깨짐
+-->EDITPLUS utf-8로 되어있는지 보기;;
+
+UNIXTIME으로 넣으면 reg_date가 170023041이런 식으로 값이 들어간다 
+우리가 아는 Y-m-d형식으로 빼려면 DATE(FROM_UNIXTIME(b.REGDATE))식으로 조건문이나 SELECT 할 때 컬럼으로 써주면 가능
+
+trigger 사용법
+
+리스너를 추가해 프로그램을 해당 프로젝트에서 별개로 쭉 돌릴 수 있음
+
+크롤링 - 서버가 자체적으로 해당 파일을 도는 것 --> 공부해볼 필요가 있음
+
+서버 접속 - (SSH)
+powershell 
+ssh username@ip -p portnum
+ex)  ssh joms0308@128.0.0.1 -p 22
+
+병합 정렬 공부
