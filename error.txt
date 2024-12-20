@@ -24,3 +24,6 @@ ssh username@ip -p portnum
 ex)  ssh joms0308@128.0.0.1 -p 22
 
 병합 정렬 공부
+
+INSERT INTO iotc_settings(site_code, code, `value`) VALUES(?, ?, ?) ON DUPLICATE KEY UPDATE `value` = ?
+--> 기본키가 위배되면 업데이트 아니면 insert-->유용하게 써먹을 것  같음.
